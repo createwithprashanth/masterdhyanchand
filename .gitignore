@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude
+.claude/
+
+# Originals / unoptimised (not used by the website)
+media/images/web/IMG_7861.jpg
+media/images/*.HEIC
+media/images/*.heic
+
+# Large video (132 MB — exceeds GitHub 100 MB limit)
+# Host on YouTube or use Git LFS for this file
+media/videos/IMG_7820.mov
