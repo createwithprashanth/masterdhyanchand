@@ -27,6 +27,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/images/favicon.png" />
+  <link rel="apple-touch-icon" href="media/images/favicon.png" />
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
 
@@ -74,9 +78,14 @@
           <div class="hero__eyebrow-line" aria-hidden="true"></div>
           <span>Karate · Age 5 · Yellow Belt</span>
         </div>
-        <h1 class="display hero__name" data-reveal="1">
-          Dhyan<span class="accent">chand</span>
-        </h1>
+        <div class="hero__name-row" data-reveal="1">
+          <div class="hero__name-logo-wrap">
+            <img src="media/images/logo_square.png" alt="" aria-hidden="true" class="hero__name-logo" />
+          </div>
+          <h1 class="display hero__name">
+            Dhyan<span class="accent">chand</span>
+          </h1>
+        </div>
         <div class="hero__meta" data-reveal="2">
           <p class="hero__desc">
             At just 5 years old, he kicks higher, trains harder,
@@ -406,7 +415,7 @@
 
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
-    <div class="footer__logo">Master <span class="accent">Dhyanchand</span></div>
+    <img src="media/images/logo_square.png" alt="Master Dhyanchand" class="footer__logo-img" />
     <ul class="footer__links" role="list">
       <li><a href="#about">About</a></li>
       <li><a href="#gallery">Gallery</a></li>
