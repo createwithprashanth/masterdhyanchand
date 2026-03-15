@@ -6,6 +6,30 @@
       const onScroll = () => nav.classList.toggle('is-scrolled', window.scrollY > 60);
       window.addEventListener('scroll', onScroll, { passive: true });
 
+      /* ── Hamburger nav ── */
+      const hamburger = document.getElementById('nav-hamburger');
+      const navLinks  = document.getElementById('nav-links');
+
+      const closeMenu = () => {
+        navLinks.classList.remove('is-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open menu');
+      };
+
+      hamburger.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('is-open');
+        hamburger.setAttribute('aria-expanded', String(isOpen));
+        hamburger.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      });
+
+      /* Close on nav link click */
+      navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+      /* Close on outside click */
+      document.addEventListener('click', e => {
+        if (!nav.contains(e.target)) closeMenu();
+      });
+
       /* ── Scroll reveal ── */
       const revealObs = new IntersectionObserver(
         entries => entries.forEach(e => {

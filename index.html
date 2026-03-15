@@ -7,14 +7,20 @@
   <!-- Primary Meta -->
   <title>Master Dhyanchand — Young Karate Champion</title>
   <meta name="description" content="Dhyanchand is 5 years old and already winning medals in karate. Follow his journey of speed, flexibility, and fearless heart." />
+  <meta name="keywords" content="Dhyanchand, karate, young karate champion, 5 year old karate, Shito-Ryu, yellow belt, karate kid, martial arts child" />
+  <meta name="author" content="masterdhyanchand.com" />
   <link rel="canonical" href="https://masterdhyanchand.com/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://masterdhyanchand.com/" />
   <meta property="og:title"       content="Master Dhyanchand — Young Karate Champion" />
   <meta property="og:description" content="At just 5 years old, he kicks higher, trains harder, and smiles bigger than anyone on the mat." />
-  <meta property="og:image"       content="https://masterdhyanchand.com/media/images/web/IMG_7824.jpg" />
+  <meta property="og:image"        content="https://masterdhyanchand.com/media/images/web/IMG_7824.jpg" />
+  <meta property="og:image:width"  content="900" />
+  <meta property="og:image:height" content="1200" />
+  <meta property="og:image:alt"    content="Dhyanchand in karate gi receiving his medal and certificate" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image" />
@@ -44,15 +50,26 @@
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Dhyanchand",
-    "description": "5-year-old Shito-Ryu karate champion with a yellow belt, gold medal winner.",
-    "url": "https://masterdhyanchand.com",
-    "image": "https://masterdhyanchand.com/media/images/IMG_7824.jpg",
-    "sameAs": []
-  }
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Dhyanchand",
+      "description": "5-year-old Shito-Ryu karate champion, yellow belt holder, gold medal winner.",
+      "url": "https://masterdhyanchand.com",
+      "image": "https://masterdhyanchand.com/media/images/web/IMG_7824.jpg",
+      "knowsAbout": ["Karate", "Shito-Ryu Karate", "Martial Arts"],
+      "award": "Gold Medal — Karate Tournament",
+      "sameAs": []
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Master Dhyanchand",
+      "url": "https://masterdhyanchand.com",
+      "description": "Follow the karate journey of Dhyanchand — 5-year-old Shito-Ryu champion."
+    }
+  ]
   </script>
 </head>
 <body>
@@ -62,12 +79,17 @@
   <header>
     <nav class="nav" id="nav" aria-label="Main navigation">
       <a href="/" class="nav__logo">Master <span class="accent">Dhyanchand</span></a>
-      <ul class="nav__links" role="list">
+      <ul class="nav__links" id="nav-links" role="list">
         <li><a href="#about">About</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#youtube" class="nav__cta">Subscribe</a></li>
       </ul>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
