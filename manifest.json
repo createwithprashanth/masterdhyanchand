@@ -1,0 +1,21 @@
+{
+  "name": "Master Dhyanchand",
+  "short_name": "Dhyanchand",
+  "description": "Dhyanchand — 5-year-old karate champion. Follow his journey.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#d4192a",
+  "icons": [
+    {
+      "src": "media/images/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "media/images/logo_square.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ]
+}

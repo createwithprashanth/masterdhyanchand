@@ -14,22 +14,30 @@
   <meta property="og:url"         content="https://masterdhyanchand.com/" />
   <meta property="og:title"       content="Master Dhyanchand — Young Karate Champion" />
   <meta property="og:description" content="At just 5 years old, he kicks higher, trains harder, and smiles bigger than anyone on the mat." />
-  <meta property="og:image"       content="https://masterdhyanchand.com/media/images/IMG_7824.jpg" />
+  <meta property="og:image"       content="https://masterdhyanchand.com/media/images/web/IMG_7824.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:title"       content="Master Dhyanchand — Young Karate Champion" />
   <meta name="twitter:description" content="At just 5 years old, he kicks higher, trains harder, and smiles bigger than anyone on the mat." />
-  <meta name="twitter:image"       content="https://masterdhyanchand.com/media/images/IMG_7824.jpg" />
+  <meta name="twitter:image"       content="https://masterdhyanchand.com/media/images/web/IMG_7824.jpg" />
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#d4192a" />
 
   <!-- Fonts -->
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
 
-  <!-- Favicon -->
+  <!-- Favicon & PWA -->
   <link rel="icon" type="image/png" href="media/images/favicon.png" />
   <link rel="apple-touch-icon" href="media/images/favicon.png" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="media/images/web/IMG_7824.jpg" />
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="css/style.css" />
@@ -68,7 +76,7 @@
     <!-- ─── HERO ─── -->
     <section class="hero" aria-label="Hero — Dhyanchand">
       <div class="hero__bg" aria-hidden="true">
-        <video autoplay muted loop playsinline preload="auto">
+        <video autoplay muted loop playsinline preload="metadata" poster="media/images/web/IMG_7824.jpg">
           <source src="media/videos/f920d2e9-eb55-4e77-8509-8b95adb3b16a.MP4" type="video/mp4" />
         </video>
       </div>
@@ -137,15 +145,18 @@
       <div class="container">
         <div class="about__grid">
           <div class="about__photo-wrap" data-reveal>
-            <img
-              class="about__photo"
-              src="media/images/web/IMG_7824.jpg"
-              alt="Dhyanchand in karate gi receiving his medal and certificate"
-              loading="eager"
-              decoding="async"
-              width="900"
-              height="1200"
-            />
+            <picture>
+              <source srcset="media/images/web/IMG_7824.webp" type="image/webp" />
+              <img
+                class="about__photo"
+                src="media/images/web/IMG_7824.jpg"
+                alt="Dhyanchand in karate gi receiving his medal and certificate"
+                loading="eager"
+                decoding="async"
+                width="900"
+                height="1200"
+              />
+            </picture>
             <div class="about__badge" aria-hidden="true">
               <div class="about__badge-num">1st</div>
               <div class="about__badge-text">Medal Won</div>
@@ -213,7 +224,7 @@
             autoplay muted loop playsinline preload="auto"
             aria-label="Dhyanchand karate practice session"
           >
-            <source src="media/videos/practice.mp4" type="video/mp4" />
+            <source src="media/videos/practice_720.mp4" type="video/mp4" />
           </video>
           <div class="feature__video-meta">
             <div class="feature__video-title">Practice Session</div>
@@ -226,15 +237,18 @@
     <!-- ─── ACHIEVEMENT BANNER ─── -->
     <section class="achievement" aria-labelledby="achievement-heading">
       <div class="achievement__inner">
-        <img
-          class="achievement__photo"
-          src="media/images/web/image1.JPG"
-          alt="Dhyanchand standing with his Sensei in the dojo, both in karate uniforms"
-          loading="lazy"
-          decoding="async"
-          width="900"
-          height="1200"
-        />
+        <picture>
+          <source srcset="media/images/web/image1.webp" type="image/webp" />
+          <img
+            class="achievement__photo"
+            src="media/images/web/image1.JPG"
+            alt="Dhyanchand standing with his Sensei in the dojo, both in karate uniforms"
+            loading="lazy"
+            decoding="async"
+            width="900"
+            height="1200"
+          />
+        </picture>
         <div class="achievement__content">
           <p class="label label--light" data-reveal>Under Great Guidance</p>
           <h2 class="heading achievement__heading" id="achievement-heading" data-reveal="1">
@@ -277,27 +291,27 @@
 
         <div class="gallery__grid" role="list">
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal       data-index="0" aria-label="Open photo: Karate Medal Ceremony">
-            <img src="media/images/web/IMG_7824.jpg"    alt="Dhyanchand in karate gi receiving medal and certificate at ceremony" loading="lazy" decoding="async" width="900" height="1200" />
+            <picture><source srcset="media/images/web/IMG_7824.webp" type="image/webp" /><img src="media/images/web/IMG_7824.jpg" alt="Dhyanchand in karate gi receiving medal and certificate at ceremony" loading="lazy" decoding="async" width="900" height="1200" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">Karate Medal Ceremony</span></div>
           </div>
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal="1"   data-index="1" aria-label="Open photo: Night Adventure">
-            <img src="media/images/web/IMG_7249.jpg"    alt="Dhyanchand riding a go-kart at night with city lights behind him" loading="lazy" decoding="async" width="1200" height="900" />
+            <picture><source srcset="media/images/web/IMG_7249.webp" type="image/webp" /><img src="media/images/web/IMG_7249.jpg" alt="Dhyanchand riding a go-kart at night with city lights behind him" loading="lazy" decoding="async" width="1200" height="900" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">Night Adventure</span></div>
           </div>
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal="2"   data-index="2" aria-label="Open photo: The Curious Student">
-            <img src="media/images/web/IMG_7518.jpg"    alt="Dhyanchand sitting at his study desk looking curious and happy" loading="lazy" decoding="async" width="900" height="1200" />
+            <picture><source srcset="media/images/web/IMG_7518.webp" type="image/webp" /><img src="media/images/web/IMG_7518.jpg" alt="Dhyanchand sitting at his study desk looking curious and happy" loading="lazy" decoding="async" width="900" height="1200" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">The Curious Student</span></div>
           </div>
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal="3"   data-index="3" aria-label="Open photo: Explorer Mode">
-            <img src="media/images/web/IMG_7861_1.jpeg" alt="Dhyanchand wearing a hard hat and safety glasses, Explorer hoodie on" loading="lazy" decoding="async" width="900" height="1200" />
+            <picture><source srcset="media/images/web/IMG_7861_1.webp" type="image/webp" /><img src="media/images/web/IMG_7861_1.jpeg" alt="Dhyanchand wearing a hard hat and safety glasses, Explorer hoodie on" loading="lazy" decoding="async" width="900" height="1200" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">Explorer Mode</span></div>
           </div>
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal="4"   data-index="4" aria-label="Open photo: With Sensei">
-            <img src="media/images/web/image1.JPG"      alt="Dhyanchand standing proudly next to his Sensei, both in karate uniforms" loading="lazy" decoding="async" width="900" height="1200" />
+            <picture><source srcset="media/images/web/image1.webp" type="image/webp" /><img src="media/images/web/image1.JPG" alt="Dhyanchand standing proudly next to his Sensei, both in karate uniforms" loading="lazy" decoding="async" width="900" height="1200" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">With Sensei</span></div>
           </div>
           <div class="gallery__item" role="listitem" tabindex="0" data-reveal="4"   data-index="5" aria-label="Open photo: Always in Style">
-            <img src="media/images/web/IMG_4808.jpg"    alt="Dhyanchand kicking his leg up on a police-style ride-on toy with city skyline" loading="lazy" decoding="async" width="900" height="1200" />
+            <picture><source srcset="media/images/web/IMG_4808.webp" type="image/webp" /><img src="media/images/web/IMG_4808.jpg" alt="Dhyanchand kicking his leg up on a police-style ride-on toy with city skyline" loading="lazy" decoding="async" width="900" height="1200" /></picture>
             <div class="gallery__overlay" aria-hidden="true"><span class="gallery__caption">Always in Style</span></div>
           </div>
         </div>
@@ -354,7 +368,7 @@
               poster="media/images/web/IMG_7249.jpg"
               aria-label="Dhyanchand karate practice session"
             >
-              <source src="media/videos/practice.mp4" type="video/mp4" />
+              <source src="media/videos/practice_720.mp4" type="video/mp4" />
             </video>
             <div class="video-card__body">
               <h3 class="video-card__title">Practice Session</h3>
