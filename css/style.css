@@ -888,6 +888,7 @@
     .footer__links a:hover,
     .footer__links a:focus-visible { color: var(--white); outline: none; }
     .footer__copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+    .footer__love { font-size: 0.72rem; color: rgba(255,255,255,0.18); letter-spacing: 0.04em; }
 
     /* ─────────────────────────────────────────
        RESPONSIVE
