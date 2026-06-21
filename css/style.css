@@ -484,6 +484,56 @@
     .tag:hover { border-color: var(--red); color: var(--red); transform: translateY(-2px); }
 
     /* ─────────────────────────────────────────
+       MILESTONE
+    ───────────────────────────────────────── */
+    .milestone__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-xl);
+      align-items: center;
+    }
+    .milestone__photo-wrap {
+      position: relative;
+    }
+    .milestone__photo {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: center;
+      border-radius: var(--radius-md);
+    }
+    .milestone__badge {
+      position: absolute;
+      bottom: -20px;
+      left: -20px;
+      background: var(--red);
+      color: var(--white);
+      padding: 18px 22px;
+      border-radius: var(--radius-md);
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      box-shadow: 0 16px 40px rgba(212,25,42,0.22);
+    }
+    .milestone__badge-num {
+      font-size: 2.35rem;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .milestone__badge-text {
+      max-width: 140px;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      line-height: 1.25;
+      text-transform: uppercase;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+    .milestone__body {
+      margin-block: 28px 40px;
+    }
+
+    /* ─────────────────────────────────────────
        FEATURE VIDEO
     ───────────────────────────────────────── */
     .feature {
@@ -1175,6 +1225,9 @@
 
       .about__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
       .about__photo-wrap { padding-bottom: var(--space-md); }
+
+      .milestone__grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+      .milestone__photo-wrap { padding-bottom: var(--space-md); }
 
       .feature { padding: var(--space-xl) var(--space-md); }
       .feature__inner { grid-template-columns: 1fr; gap: var(--space-lg); }
