@@ -50,6 +50,7 @@
         { src: 'media/images/web/IMG_7861_1.jpeg', alt: 'Explorer Mode' },
         { src: 'media/images/web/image1.JPG',      alt: 'With Sensei' },
         { src: 'media/images/web/IMG_4808.jpg',    alt: 'Always in Style' },
+        { src: 'media/images/web/IMG_8519_preview.jpg', alt: 'Young Karate Champion' },
       ];
 
       const lb      = document.getElementById('lightbox');
